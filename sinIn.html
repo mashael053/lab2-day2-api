@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sig-In</title>
+    <link rel="stylesheet" href="style-registration.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="contact">
+            <img src="img.png" alt="" srcset="">
+        </div>
+        <div  class="SignUp">
+            <h1 class="title-page">Sign In</h1>
+            <form id="loginForm" action="index.html">
+            <div class="box">  
+                <input type="text" placeholder="User-name"id="username" name="username" required> </div>
+            <div class="box">
+            <input type="password"id="password" name="password" placeholder="password"required></div>
+            <input class="but" type="submit" value="Sign In">
+        </form> 
+        </div>
+        </div>
+<script>
+document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault(); 
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            window.location.href = "index.html";
+        });
+</script>
+</body>
+</html>
+
